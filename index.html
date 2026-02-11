@@ -305,6 +305,36 @@ nav a {
   opacity: 1;
   transform: translateY(0);
 }
+    /* TESTIMONIAL SECTION */
+.testimonials {
+  padding: 100px 10%;
+  background: #111;
+  text-align: center;
+}
+
+.testimonial-container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial {
+  display: none;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+.testimonial h4 {
+  margin-top: 25px;
+  font-weight: 400;
+  color: #d4af37;
+  font-size: 16px;
+}
+
+.testimonial.active {
+  display: block;
+}
 </style>
 </head>
 
@@ -359,6 +389,25 @@ nav a {
             <p>Professional tailoring adjustments for the perfect fit.</p>
         </div>
     </div>
+<section class="testimonials fade-in">
+  <h2>What Our Clients Say</h2>
+
+  <div class="testimonial-container">
+    <div class="testimonial active">
+      <p>"Absolutely the best tailor in Chiang Mai. The fit was perfect and the fabric quality exceptional."</p>
+      <h4>— James R., UK</h4>
+    </div>
+
+    <div class="testimonial">
+      <p>"My wedding suit was flawless. Professional service and incredible attention to detail."</p>
+      <h4>— Daniel M., Australia</h4>
+    </div>
+
+    <div class="testimonial">
+      <p>"High-end tailoring at a great value. I’ll definitely return next time I’m in Thailand."</p>
+      <h4>— Marco L., Italy</h4>
+    </div>
+  </div>
 </section>
 
 <section id="contact" class="fade-in">
@@ -395,7 +444,17 @@ document.addEventListener("DOMContentLoaded", function() {
     appearOnScroll.observe(fader);
   });
 });
-</script>
+<script>
+let testimonials = document.querySelectorAll(".testimonial");
+let currentIndex = 0;
+
+function showNextTestimonial() {
+  testimonials[currentIndex].classList.remove("active");
+  currentIndex = (currentIndex + 1) % testimonials.length;
+  testimonials[currentIndex].classList.add("active");
+}
+
+setInterval(showNextTestimonial, 4000);
 </script>
 
 </body>
