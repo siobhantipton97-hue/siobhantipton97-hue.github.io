@@ -84,13 +84,30 @@ section h2 {
 }
 
 .service-card {
-    background: #1a1a1a;
-    padding: 30px;
-    width: 280px;
-    border-radius: 8px;
+    background: #111;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(212, 175, 55, 0.15);
     transition: 0.3s ease;
 }
 
+.service-card h3 {
+    color: #d4af37;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.service-card p {
+    color: #bbb;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: #d4af37;
+}
 .service-card:hover {
     transform: translateY(-5px);
     background: #222;
