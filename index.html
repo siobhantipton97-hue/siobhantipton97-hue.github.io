@@ -137,6 +137,43 @@ footer {
     transform: translateY(-3px);
     box-shadow: 0 12px 30px rgba(0,0,0,0.6);
 }
+    .hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('https://images.unsplash.com/photo-1520975928316-8d6c3e2f7a73?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.hero-btn {
+    padding: 12px 28px;
+    background-color: #d4af37;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: white;
+}
 </style>
 </head>
 
@@ -154,9 +191,13 @@ footer {
 </nav>
 
 <header>
-    <h1>Chiang Mai Tailor Club</h1>
-    <p>Luxury Custom Tailoring in Chiang Mai</p>
-    <a href="#contact" class="button">Book Appointment</a>
+    <section class="hero">
+    <div class="hero-content">
+        <h1>Chiang Mai Tailor Club</h1>
+        <p>Luxury Custom Suits & Bespoke Tailoring in Thailand</p>
+        <a href="#contact" class="hero-btn">Book Your Fitting</a>
+    </div>
+</section>
 </header>
 
 <section id="services">
