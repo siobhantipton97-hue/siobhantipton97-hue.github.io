@@ -287,6 +287,17 @@ nav {
 nav a {
     font-size: 16px;
 }
+    /* FADE-IN ANIMATION */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 </style>
 </head>
 
@@ -312,7 +323,7 @@ nav a {
     </div>
 </section>
 </header>
-<section class="about">
+<section class="about fade-in">
     <div class="about-container">
         <h2>About Chiang Mai Tailor Club</h2>
         <p>
@@ -323,7 +334,7 @@ nav a {
         </p>
     </div>
 </section>
-<section id="services">
+<section id="services" class="fade-in">
     <h2>Our Services</h2>
     <div class="services">
         <div class="service-card">
@@ -343,7 +354,7 @@ nav a {
     </div>
 </section>
 
-<section id="contact">
+<section id="contact" class="fade-in">
     <h2>Contact Us</h2>
     <p>Chiang Mai, Thailand</p>
     <p>Email: <a href="mailto:CMtailorclub@gmail.com">CMtailorclub@gmail.com</a></p>
@@ -353,8 +364,26 @@ nav a {
 <footer>
     <p>© 2026 Chiang Mai Tailor Club. All rights reserved.</p>
 </footer>
-<a href="https://wa.me/66993137818" class="whatsapp-float" target="_blank">
-    Chat on WhatsApp
-</a>
+
+<script>
+const faders = document.querySelectorAll('.fade-in');
+
+const appearOptions = {
+  threshold: 0.2
+};
+
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add('visible');
+    observer.unobserve(entry.target);
+  });
+}, appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+</script>
+
 </body>
 </html>
