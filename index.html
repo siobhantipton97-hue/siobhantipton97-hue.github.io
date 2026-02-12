@@ -208,6 +208,12 @@ footer {
 .review-dots .active-dot {
   background-color: #c6a75e;
 }
+  .stars {
+  color: #d4af37; /* luxury gold */
+  font-size: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+}
 </style>
 </head>
 
@@ -267,18 +273,20 @@ footer {
   <div class="container">
     <h2>Client Reviews</h2>
 
-    <div class="review-slider">
-      <div class="review active">
-        <p>"The best tailor in Chiang Mai. My custom suit fits perfectly and the quality is outstanding. Highly recommend for anyone visiting Thailand."</p>
-        <h4>— James R.</h4>
-      </div>
+   <div class="review active">
+  <div class="stars">★★★★★</div>
+  <p>"Best tailor in Chiang Mai. Perfect fit and amazing service."</p>
+  <h4>– James W.</h4>
+</div>
 
       <div class="review">
+        <div class="stars">★★★★★</div>
         <p>"I had my wedding suit made here and it was exceptional. Professional service and excellent craftsmanship."</p>
         <h4>— Daniel M.</h4>
       </div>
 
       <div class="review">
+        <div class="stars">★★★★★</div>
         <p>"Amazing bespoke tailoring experience. The fitting process was detailed and the final suit exceeded expectations."</p>
         <h4>— Michael T.</h4>
       </div>
@@ -309,31 +317,43 @@ footer {
 <script>
 let reviewIndex = 0;
 const reviews = document.querySelectorAll(".review");
-const dots = document.querySelectorAll(".review-dots span");
+const reviewContainer = document.querySelector(".review-container");
 
 function showReview(index) {
-  reviews.forEach((review, i) => {
-    review.classList.remove("active");
-    dots[i].classList.remove("active-dot");
-  });
+  reviews.forEach((review) => review.classList.remove("active"));
   reviews[index].classList.add("active");
-  dots[index].classList.add("active-dot");
-}
-
-function currentReview(index) {
-  reviewIndex = index;
-  showReview(reviewIndex);
 }
 
 function autoSlide() {
   reviewIndex++;
-  if (reviewIndex >= reviews.length) {
-    reviewIndex = 0;
-  }
+  if (reviewIndex >= reviews.length) reviewIndex = 0;
   showReview(reviewIndex);
 }
 
-setInterval(autoSlide, 5000);
+let slideInterval = setInterval(autoSlide, 5000);
+
+/* 👇 SWIPE CODE GOES HERE */
+let startX = 0;
+
+reviewContainer.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+});
+
+reviewContainer.addEventListener("touchend", (e) => {
+  let endX = e.changedTouches[0].clientX;
+
+  if (startX - endX > 50) {
+    reviewIndex++;
+    if (reviewIndex >= reviews.length) reviewIndex = 0;
+    showReview(reviewIndex);
+  }
+
+  if (endX - startX > 50) {
+    reviewIndex--;
+    if (reviewIndex < 0) reviewIndex = reviews.length - 1;
+    showReview(reviewIndex);
+  }
+});
 </script>
 
 </body>
