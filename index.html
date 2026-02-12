@@ -20,9 +20,7 @@
 
 <style>
 
-html {
-scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
 margin: 0;
@@ -38,7 +36,7 @@ nav {
 position: fixed;
 top: 0;
 width: 100%;
-background: rgba(0,0,0,0.9);
+background: rgba(0,0,0,0.95);
 padding: 18px 40px;
 display: flex;
 justify-content: space-between;
@@ -65,12 +63,9 @@ nav a {
 color: white;
 text-decoration: none;
 font-size: 14px;
-font-weight: 400;
 }
 
-nav a:hover {
-color: #c6a75e;
-}
+nav a:hover { color: #c6a75e; }
 
 /* HERO */
 
@@ -105,9 +100,7 @@ font-size: 48px;
 margin-bottom: 20px;
 }
 
-.hero p {
-font-size: 20px;
-}
+.hero p { font-size: 20px; }
 
 /* BUTTON */
 
@@ -122,9 +115,7 @@ margin-top: 25px;
 transition: 0.3s;
 }
 
-.btn:hover {
-background: #b59445;
-}
+.btn:hover { background: #b59445; }
 
 /* CONTENT */
 
@@ -140,9 +131,7 @@ font-size: 32px;
 margin-bottom: 20px;
 }
 
-section {
-margin-bottom: 100px;
-}
+section { margin-bottom: 100px; }
 
 .reviews {
 background: white;
@@ -150,8 +139,6 @@ padding: 50px;
 border-radius: 8px;
 box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
-
-/* MAP */
 
 .map iframe {
 width: 100%;
@@ -203,12 +190,9 @@ gap: 15px;
 
 .hero h1 { font-size: 30px; }
 .hero p { font-size: 16px; }
-
 h2 { font-size: 24px; }
 
-.container {
-padding: 80px 20px;
-}
+.container { padding: 80px 20px; }
 
 }
 
@@ -241,16 +225,16 @@ padding: 80px 20px;
 <li><a href="#services">Services</a></li>
 <li><a href="#reviews">Reviews</a></li>
 <li><a href="#location">Location</a></li>
-<li><a href="#contact">Contact</a></li>
+<li><a href="#contact">Book</a></li>
 </ul>
 </nav>
 
 <section class="hero">
 <div class="hero-overlay"></div>
 <div class="hero-content">
-<h1>Best Tailor in Chiang Mai – Luxury Bespoke Suits</h1>
-<p>Refined Craftsmanship. Timeless Design.</p>
-<a href="#contact" class="btn">Book a Private Fitting</a>
+<h1>Luxury Bespoke Tailoring in Chiang Mai</h1>
+<p>Crafted for Weddings, Business & Distinction</p>
+<a href="#contact" class="btn">Check Availability</a>
 </div>
 </section>
 
@@ -258,19 +242,19 @@ padding: 80px 20px;
 
 <section id="about">
 <h2>About CM Tailor Club</h2>
-<p>CM Tailor Club is recognised as one of the best tailors in Chiang Mai, specialising in luxury bespoke suits, wedding tailoring, and custom formalwear. Every garment is crafted with precision, ensuring exceptional fit and elegance.</p>
+<p>CM Tailor Club is recognised as one of the best tailors in Chiang Mai, specialising in luxury bespoke suits, wedding tailoring and custom formalwear. Every garment is crafted with precision to ensure exceptional fit and timeless elegance.</p>
 </section>
 
 <section id="services">
-<h2>Luxury Tailoring Services in Chiang Mai</h2>
-<p>We create custom business suits, wedding tuxedos, bespoke shirts, and formalwear tailored to your exact measurements. Located at Anusan Market on Changklan Road, we serve both local clients and international visitors.</p>
+<h2>Our Tailoring Services</h2>
+<p>We create custom business suits, wedding tuxedos, bespoke shirts and formalwear tailored to your exact measurements. Located at Anusan Market on Changklan Road, we serve both local clients and international visitors.</p>
 </section>
 
 <section id="reviews" class="reviews">
 <h2>Client Reviews</h2>
-<p>★★★★★ – “The best tailor in Chiang Mai. Exceptional quality.”</p>
-<p>★★★★★ – “Perfect wedding suit and amazing service.”</p>
-<p>★★★★★ – “True luxury craftsmanship.”</p>
+<p>★★★★★ – “The best tailor in Chiang Mai. Exceptional craftsmanship.”</p>
+<p>★★★★★ – “Perfect wedding suit and outstanding service.”</p>
+<p>★★★★★ – “True luxury experience from start to finish.”</p>
 </section>
 
 <section id="location" class="map">
@@ -279,10 +263,16 @@ padding: 80px 20px;
 </section>
 
 <section id="contact">
-<h2>Book Your Bespoke Consultation</h2>
-<p>Email: CMtailorclub@gmail.com</p>
-<p>Phone: +66993938718</p>
-<a href="mailto:CMtailorclub@gmail.com" class="btn">Email Us</a>
+<h2>Book Your Private Fitting</h2>
+<p>Select a time below to schedule your bespoke consultation at CM Tailor Club.</p>
+
+<div class="calendly-inline-widget"
+     data-url="https://calendly.com/cmtailorclub/private-fitting-cm-tailor-club"
+     style="min-width:320px;height:700px;">
+</div>
+
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
 </section>
 
 </div>
