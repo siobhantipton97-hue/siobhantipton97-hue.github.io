@@ -17,89 +17,7 @@
 <meta property="og:url" content="https://cmtailorclub.shop/">
 <meta property="og:image" content="https://cmtailorclub.shop/hero.jpg">
 
-<!-- LOCAL SEO STRUCTURED DATA -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ClothingStore",
-  "name": "CM Tailor Club",
-  "image": "https://cmtailorclub.shop/hero.jpg",
-  "url": "https://cmtailorclub.shop/",
-  "telephone": "+66993938718",
-  "email": "cmtailorclub@gmail.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "149, Anusan Market, 12 Changklan Rd",
-    "addressLocality": "Chiang Mai",
-    "addressRegion": "Chiang Mai",
-    "postalCode": "50100",
-    "addressCountry": "TH"
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-      "Sunday"
-    ],
-    "opens": "10:00",
-    "closes": "23:00"
-  },
-  "priceRange": "$$",
- "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5",
-    "reviewCount": "6"
-  }
-}
-</script>
-
-<!-- FAQ STRUCTURED DATA -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How long does a custom suit take in Chiang Mai?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most custom suits at CM Tailor Club are completed within 2–4 days, depending on fabric selection and fitting adjustments. We offer fast turnaround options for tourists visiting Chiang Mai."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you offer fittings for tourists visiting Chiang Mai?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. CM Tailor Club specialises in serving international visitors and can arrange fittings to match your travel schedule in Chiang Mai."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What fabrics do you use for bespoke suits?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We offer premium wool, cashmere blends, linen, cotton and other high-quality fabrics sourced internationally for our bespoke tailoring."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where is CM Tailor Club located?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "CM Tailor Club is located at 149 Anusan Market, Changklan Road, Chiang Mai 50100, near the Night Bazaar area."
-      }
-    }
-  ]
-}
-</script>
-  
+<!-- STYLES -->
 <style>
 html { scroll-behavior: smooth; }
 
@@ -124,12 +42,6 @@ align-items: center;
 z-index: 1000;
 }
 
-.logo {
-font-family: 'Playfair Display', serif;
-color: #fff;
-font-size: 22px;
-letter-spacing: 1px;
-}
 .logo img {
 height: 95px;
 width: auto;
@@ -186,7 +98,6 @@ margin-bottom: 20px;
 
 .hero p { font-size: 20px; }
 
-/* BUTTON */
 .btn {
 display: inline-block;
 background: #c6a75e;
@@ -200,7 +111,6 @@ transition: 0.3s;
 
 .btn:hover { background: #b59445; }
 
-/* CONTENT */
 .container {
 max-width: 1100px;
 margin: auto;
@@ -215,154 +125,48 @@ margin-bottom: 20px;
 
 section { margin-bottom: 100px; }
 
-.reviews {
-background: white;
-padding: 50px;
+/* FAQ SECTION */
+#faq {
+background: #fff;
+padding: 60px 40px;
 border-radius: 8px;
 box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-.map iframe {
-width: 100%;
-height: 450px;
-border: 0;
-}
-
-.contact-details p {
-margin: 8px 0;
-}
-
-.trust-text {
-margin-top: 25px;
-font-size: 14px;
-color: #444;
-line-height: 1.6;
-}
-
-/* FOOTER */
-footer {
-background: #111;
-color: white;
+#faq h2 {
 text-align: center;
-padding: 40px 20px;
+margin-bottom: 40px;
 }
 
-.whatsapp-float {
-position: fixed;
-bottom: 20px;
-right: 20px;
-background: #c6a75e;
+.faq-item {
+margin-bottom: 25px;
+}
+
+.faq-item h3 {
+font-size: 18px;
+margin-bottom: 8px;
 color: #111;
-border-radius: 50px;
-padding: 14px 18px;
-font-size: 14px;
-text-decoration: none;
-font-weight: 600;
-box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-z-index: 999;
-transition: 0.3s;
 }
 
-.whatsapp-float:hover {
-background: #b59445;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-nav {
-flex-direction: column;
-gap: 10px;
-padding: 15px;
-}
-nav ul {
-flex-wrap: wrap;
-justify-content: center;
-gap: 15px;
-}
-.hero h1 { font-size: 30px; }
-.hero p { font-size: 16px; }
-h2 { font-size: 24px; }
-.container { padding: 80px 20px; }
-}
-  /* REVIEWS SECTION */
-.reviews {
-  background: #111;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.reviews h2 {
-  font-size: 32px;
-  margin-bottom: 50px;
-  color: #d4af37; /* Gold */
-  letter-spacing: 2px;
-}
-
-/* Review Card */
-.review-card {
-  background: #1c1c1c;
-  border: 1px solid #d4af37;
-  border-radius: 12px;
-  padding: 30px;
-  margin: 20px auto;
-  max-width: 700px;
-  box-shadow: 0 0 20px rgba(212,175,55,0.15);
-  transition: transform 0.3s ease;
-}
-
-.review-card:hover {
-  transform: translateY(-5px);
-}
-
-.review-card h3 {
-  color: #d4af37;
-  margin-bottom: 10px;
-}
-
-.review-card p {
-  color: #eee;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-/* Premium SVG Stars */
-.stars {
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-  margin-bottom: 12px;
-}
-
-.star {
-  width: 20px;
-  height: 20px;
-  fill: #d4af37;
-  filter: drop-shadow(0 0 4px rgba(212,175,55,0.5));
-}
-
-/* Google Badge */
-.google-badge {
-  margin-top: 40px;
-  font-size: 18px;
-  color: #fff;
-  font-weight: bold;
-  letter-spacing: 1px;
+.faq-item p {
+font-size: 15px;
+color: #444;
+line-height: 1.7;
 }
 </style>
-
 </head>
+
 <body>
 
 <nav>
-  <div class="logo">
-    <a href="/">
-      <img src="logo.png" alt="CM Tailor Club Logo">
-    </a>
-  </div>
-  <ul>
+<div class="logo">
+<a href="/"><img src="logo.png" alt="CM Tailor Club Logo"></a>
+</div>
+<ul>
 <li><a href="#about">About</a></li>
 <li><a href="#services">Services</a></li>
 <li><a href="#reviews">Reviews</a></li>
+<li><a href="#faq">FAQ</a></li>
 <li><a href="#location">Location</a></li>
 <li><a href="#contactus">Contact</a></li>
 <li><a href="#contact">Book</a></li>
@@ -382,7 +186,7 @@ h2 { font-size: 24px; }
 
 <section id="about">
 <h2>About CM Tailor Club</h2>
-<p>CM Tailor Club is a bespoke tailor based in Chiang Mai, Thailand, offering custom suits, tailored shirts and precision alterations. We provide private in-store fittings for both local clients and international visitors.</p>
+<p>CM Tailor Club is a bespoke tailor based in Chiang Mai, Thailand, offering custom suits, tailored shirts and precision alterations.</p>
 </section>
 
 <section id="services">
@@ -390,124 +194,58 @@ h2 { font-size: 24px; }
 <p>We create custom business suits, wedding tuxedos, bespoke shirts and formalwear tailored to your exact measurements.</p>
 </section>
 
-<section id="reviews" class="reviews">
-  <h2>Client Reviews</h2>
+<!-- FAQ SECTION INSERTED -->
+<section id="faq">
+<h2>Frequently Asked Questions</h2>
 
-  <div class="review-card">
-    <div class="stars">
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-</div>
-    <h3>Gopal Chaitanya</h3>
-    <p>“I got my suit here — the service and workmanship are perfect. I highly recommend this shop.”</p>
-  </div>
-
-  <div class="review-card">
-    <div class="stars">
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-</div>
-    <h3>Siobhan Tipton</h3>
-    <p>“Good quality clothing with great service. Would highly recommend.”</p>
-  </div>
-
-  <div class="review-card">
-    <div class="stars">
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-</div>
-    <h3>Aaron Purser</h3>
-    <p>“Very professional service from the start. The suit and shirt were top quality and looked great. Highly recommended.”</p>
-  </div>
-
-  <div class="review-card">
-   <div class="stars">
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-</div>
-    <h3>Tracy Patton</h3>
-    <p>“Quick turnaround, expert tailoring, and kind service. Highly recommend!”</p>
-  </div>
-
-  <div class="review-card">
-    <div class="stars">
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-</div>
-    <h3>Tom Patton</h3>
-    <p>“Perfect custom fit on the first try. Friendly, professional and top quality.”</p>
-  </div>
-
-  <div class="review-card">
-    <div class="stars">
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-  <svg viewBox="0 0 24 24" class="star"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
-</div>
-    <h3>Lasse Dienes (Germany)</h3>
-    <p>“One of the best tailors in Chiang Mai. Exceptional consultation, excellent fabrics, and four suits completed in just three days. True craftsmanship.”</p>
-  </div>
-
-  <div class="google-badge">
-    Rated 5★ on Google
-  </div>
-
-</section>
-<section id="location" class="map">
-<h2>Visit Our Chiang Mai Studio</h2>
-<iframe 
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.3491905175065!2d98.99775117347278!3d18.78258536112171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3be077851fcf%3A0x86fa0102ffd290c4!2sChiang%20Mai%20Tailor%20Club!5e0!3m2!1sen!2sth!4v1770962533295!5m2!1sen!2sth"
-allowfullscreen=""
-loading="lazy"
-referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-
-<section id="contactus">
-<h2>Contact CM Tailor Club</h2>
-<div class="contact-details">
-<p><strong>Address:</strong> 149, Anusan Market, 12 Changklan Rd, Tambon Chang Khlan, Mueang Chiang Mai District, Chiang Mai 50100</p>
-<p><strong>Phone:</strong> <a href="tel:+66993938718">+66 99 393 8718</a></p>
-<p><strong>Email:</strong> <a href="mailto:cmtailorclub@gmail.com">cmtailorclub@gmail.com</a></p>
-<p><strong>Opening Hours:</strong> Daily – 10:00 AM to 23:00 PM</p>
-</div>
-<a href="mailto:cmtailorclub@gmail.com" class="btn">Email Us</a>
-</section>
-
-<section id="contact">
-<h2>Book Your Private Bespoke Consultation</h2>
-
-<p><strong>Private Bespoke Consultation – 30 Minutes</strong></p>
-<p>Your fitting includes fabric selection, style consultation and precise measurement with our master tailor at CM Tailor Club, Chiang Mai.</p>
-<p>Appointments are limited daily to ensure personalised service.</p>
-
-<div class="calendly-inline-widget"
-     data-url="https://calendly.com/cmtailorclub/private-fitting-cm-tailor-club"
-     style="min-width:320px;height:700px;">
+<div class="faq-item">
+<h3>How long does a custom suit take in Chiang Mai?</h3>
+<p>Most custom suits are completed within 2–4 days depending on fabric and fittings.</p>
 </div>
 
-<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<div class="faq-item">
+<h3>Are you located near Chiang Mai Night Bazaar?</h3>
+<p>Yes. We are located at Anusan Market on Changklan Road, steps from the Night Bazaar.</p>
+</div>
 
-<div class="trust-text">
-✔ No payment required<br>
-✔ Confirmation sent instantly<br>
-✔ Located at 149 Anusan Market, Changklan Road
+<div class="faq-item">
+<h3>Do you offer bespoke tailoring?</h3>
+<p>Every garment is individually measured and crafted for a precise bespoke fit.</p>
+</div>
+
+<div class="faq-item">
+<h3>What fabrics do you use?</h3>
+<p>We offer wool, cashmere blends, linen, cotton and premium suiting fabrics.</p>
+</div>
+
+<div class="faq-item">
+<h3>Do you provide fittings for tourists?</h3>
+<p>Yes. We arrange fittings around travel schedules for international visitors.</p>
+</div>
+
+<div class="faq-item">
+<h3>Do you tailor for both men and women?</h3>
+<p>We create custom garments for both men and women.</p>
+</div>
+
+<div class="faq-item">
+<h3>How many fittings are required?</h3>
+<p>Typically 2–3 fittings ensure the perfect fit.</p>
+</div>
+
+<div class="faq-item">
+<h3>Do you offer alterations?</h3>
+<p>Yes. We provide professional alterations for suits and formal garments.</p>
+</div>
+
+<div class="faq-item">
+<h3>Can you ship internationally?</h3>
+<p>Yes. We offer secure international shipping if required.</p>
+</div>
+
+<div class="faq-item">
+<h3>Why choose CM Tailor Club?</h3>
+<p>With over 20 years of experience, premium fabrics and a central location, we deliver precision craftsmanship and personal service.</p>
 </div>
 
 </section>
@@ -517,10 +255,6 @@ referrerpolicy="no-referrer-when-downgrade">
 <footer>
 <p>© 2026 CM Tailor Club – Best Tailor in Chiang Mai</p>
 </footer>
-
-<a href="https://wa.me/66993938718" class="whatsapp-float" target="_blank">
-Quick WhatsApp Enquiry
-</a>
 
 </body>
 </html>
